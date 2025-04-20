@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+  
+  /* Welcome Screen */
+  #welcome-screen {
+    text-align: center;
+  }
+  
+  #welcome-screen h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  #welcome-screen button {
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #1e90ff;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  #welcome-screen button:hover {
+    background-color: #468fff;
+  }
+  
+  /* Hide calculator initially */
+  .hidden {
+    display: none;
+  }
+  
+  /* Calculator Styling */
+  .calculator {
+    background-color: #1c1c1c;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 20px #222;
+    width: 320px; /* Adjusted width */
+    max-width: 100%;
+  }
+  
+  #display {
+    width: 100%;
+    font-size: 2.2rem;
+    padding: 20px;
+    margin-bottom: 15px;
+    background: #000;
+    color: white;
+    text-align: right;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden; /* Prevent overflow */
+    box-sizing: border-box;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+  }
+  
+  button {
+    font-size: 1.5rem;
+    padding: 20px;
+    border: none;
+    border-radius: 50%;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #444;
+  }
+  
+  .operator {
+    background-color: #ff9500;
+    color: white;
+  }
+  
+  .operator:hover {
+    background-color: #ffa733;
+  }
+  
+  .zero {
+    grid-column: span 2;  /* Makes the zero button span across two columns */
+    border-radius: 40px;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
